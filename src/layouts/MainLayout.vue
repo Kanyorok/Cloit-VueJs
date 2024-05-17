@@ -29,7 +29,9 @@
     </q-header>
     <q-drawer v-model="leftDrawerOpen" bordered>
       <q-list>
-        <q-item-label header> Essential Links </q-item-label>
+        <q-item-label header>
+          <q-img src="../static/logo/secologo.png" style="width: 114px"></q-img>
+        </q-item-label>
 
         <EssentialLink
           v-for="link in linksList"
@@ -46,6 +48,7 @@
 
 <style scoped>
 .custom-toolbar {
+  padding: 0 100px 0 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
