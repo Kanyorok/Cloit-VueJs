@@ -93,7 +93,7 @@ const breakpoints = {
 const initialSlide = ref(1);
 
 const spaceBetween = computed(() => {
-  return window.innerWidth <= 768 ? -100 : -600;
+  return window.innerWidth <= 768 ? -100 : -400;
 });
 </script>
 
