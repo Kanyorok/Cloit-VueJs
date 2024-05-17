@@ -80,7 +80,7 @@ const people = [
 
 const breakpoints = {
   240: {
-    slidesPerView: 1,
+    slidesPerView: 3,
   },
   768: {
     slidesPerView: 3,
@@ -93,7 +93,7 @@ const breakpoints = {
 const initialSlide = ref(1);
 
 const spaceBetween = computed(() => {
-  return window.innerWidth <= 768 ? -100 : -400;
+  return window.innerWidth <= 767 ? -100 : -400;
 });
 </script>
 
@@ -138,25 +138,6 @@ const spaceBetween = computed(() => {
   z-index: 1;
   opacity: 0.3;
   transform: scale(0.8);
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.5); /* Background color */
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
-
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  background-color: rgba(0, 0, 0, 0.7); /* Hover background color */
 }
 
 .swiper-slide-active {
