@@ -47,11 +47,28 @@
 </template>
 
 <style scoped>
-.custom-toolbar {
-  padding: 0 100px 0 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media (max-width: 767px) {
+  .custom-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .custom-toolbar {
+    padding: 0 100px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  .custom-toolbar {
+    padding: 0 100px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .gt-sm,
 .lt-md {
