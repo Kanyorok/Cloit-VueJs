@@ -5,6 +5,7 @@
     :centered-slides="true"
     :space-between="spaceBetween"
     :navigation="true"
+    :breakpoints="breakpoints"
     :loop="false"
     class="mySwiper"
     :initial-slide="initialSlide"
@@ -93,7 +94,7 @@ const breakpoints = {
 const initialSlide = ref(1);
 
 const spaceBetween = computed(() => {
-  return window.innerWidth <= 767 ? -100 : -400;
+  return window.innerWidth <= 767 ? -100 : -300;
 });
 </script>
 
