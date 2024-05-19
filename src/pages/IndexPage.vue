@@ -1,33 +1,38 @@
 <template>
   <q-page class="bg-secondary">
-    <div class="row bg-primary header-view">
-      <div class="col">
-        <div class="main-section">
-          <h1>Looking for foreign talent with top capabilities?</h1>
-          <p class="main-section-paragraph">
-            With Hyperhire, you can quickly find the best foreign talent. Meet
-            top-tier talents instantly by clicking below.
-          </p>
-          <q-btn-group flat>
-            <div class="border-top-white">
-              <span>Visa Talent</span>
-              <p>Wages are calculated based on your country.</p>
-            </div>
-            <div class="border-top-white">
-              <span>Permanent Residence</span>
-              <p>Don't worry if you don't fit the job when you hire them.</p>
-            </div>
-            <div class="border-top-white">
-              <span>F-4 (Overseas Koreans)</span>
-              <p>
-                Even if you need someone urgently, quick hiring is possible.
-              </p>
-            </div>
-          </q-btn-group>
+    <div class="row bg-primary">
+      <div class="row header-view">
+        <div class="col">
+          <div class="main-section">
+            <h1>Looking for foreign talent with top capabilities?</h1>
+            <p class="main-section-paragraph">
+              With Hyperhire, you can quickly find the best foreign talent. Meet
+              top-tier talents instantly by clicking below.
+            </p>
+            <q-btn-group flat>
+              <div class="border-top-white">
+                <span>Visa Talent</span>
+                <p>Wages are calculated based on your country.</p>
+              </div>
+              <div class="border-top-white">
+                <span>Permanent Residence</span>
+                <p>Don't worry if you don't fit the job when you hire them.</p>
+              </div>
+              <div class="border-top-white">
+                <span>F-4 (Overseas Koreans)</span>
+                <p>
+                  Even if you need someone urgently, quick hiring is possible.
+                </p>
+              </div>
+            </q-btn-group>
+          </div>
+        </div>
+        <div class="col">
+          <SliderLink />
         </div>
       </div>
-      <div class="col">
-        <SliderLink />
+      <div class="row header-carousel">
+        <CarouselView />
       </div>
     </div>
   </q-page>
@@ -155,11 +160,15 @@
   .border-top-white p {
     font-size: 18px;
   }
+  .header-carousel {
+    padding-left: 100px;
+  }
 }
 </style>
 
 <script setup>
 import SliderLink from "components/SliderLink.vue";
+import CarouselView from "components/CarouselView.vue";
 defineOptions({
   name: "IndexPage",
 });
