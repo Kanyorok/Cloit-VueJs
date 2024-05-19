@@ -45,6 +45,9 @@
   border-width: 3px;
   margin-right: 15px;
 }
+.header-carousel {
+  display: none;
+}
 .border-top-white p {
   font-family: Roboto;
   font-weight: 400;
