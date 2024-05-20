@@ -85,9 +85,11 @@ const breakpoints = {
   },
   768: {
     slidesPerView: 3,
+    spaceBetween: 40,
   },
   1024: {
     slidesPerView: 3,
+    spaceBetween: 50,
   },
 };
 
