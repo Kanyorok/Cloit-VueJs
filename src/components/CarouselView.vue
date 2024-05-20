@@ -1,16 +1,25 @@
 <template>
   <div class="button-container">
     <button class="carousel-btn" @click="alertMessage('해외 마케팅')">
-      해외 마케팅
+      <q-img
+        src="../static/icons/icon1.png"
+        style="width: 60px; margin-left: 13px"
+      ></q-img>
+      <p class="btn-text">해외 마케팅</p>
     </button>
     <button class="carousel-btn" @click="alertMessage('퍼블리셔')">
-      퍼블리셔
+      <q-img
+        src="../static/icons/icon2.png"
+        style="width: 60px; margin-left: 13px"
+      ></q-img>
+      <p class="btn-text">해외 마케팅</p>
     </button>
     <button class="carousel-btn" @click="alertMessage('카드월(제도사)')">
-      카드월(제도사)
-    </button>
-    <button class="carousel-btn" @click="alertMessage('해외 세일즈')">
-      해외 세일즈
+      <q-img
+        src="../static/icons/icon3.png"
+        style="width: 60px; margin-left: 13px"
+      ></q-img>
+      <p class="btn-text">해외 마케팅</p>
     </button>
   </div>
 </template>
@@ -34,10 +43,15 @@ export default {
   padding: 20px 0;
 }
 
+.btn-text {
+  margin-top: 19px;
+  margin-left: 15px;
+}
+
 .carousel-btn {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 332px;
   height: 88px;
   font-size: 16px;
@@ -49,6 +63,7 @@ export default {
   margin-right: 15px;
   border-radius: 8px;
   outline: none;
+  padding-left: 16px;
 }
 
 .carousel-btn:hover {
