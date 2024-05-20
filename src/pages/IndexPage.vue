@@ -45,9 +45,6 @@
   border-width: 3px;
   margin-right: 15px;
 }
-.header-carousel {
-  display: none;
-}
 .border-top-white p {
   font-family: Roboto;
   font-weight: 400;
@@ -87,6 +84,9 @@
   .header-view {
     display: flex;
     flex-direction: column;
+  }
+  .header-carousel {
+    display: none;
   }
   .swiper-button-next {
     color: #fff !important;
