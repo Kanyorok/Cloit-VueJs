@@ -39,13 +39,14 @@ import { ref, computed } from "vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/swiper-bundle.css";
 import { Navigation } from "swiper/modules";
+import ProfileImage from "../static/profiles/profphoto.jpg";
 
 const people = [
   {
     name: "Abhishek Gupta",
     position: "마케팅",
     experience: "2y+",
-    image: "../src/static/profiles/profphoto.jpg",
+    image: ProfileImage,
     skills: [
       "마케팅 콘텐츠 제작",
       "인스타그램 관리",
@@ -57,7 +58,7 @@ const people = [
     name: "Robert Kanyoro",
     position: "마케팅",
     experience: "2y+",
-    image: "../src/static/profiles/profphoto.jpg",
+    image: ProfileImage,
     skills: [
       "마케팅 콘텐츠 제작",
       "인스타그램 관리",
@@ -69,7 +70,7 @@ const people = [
     name: "Esther Wahu",
     position: "마케팅",
     experience: "2y+",
-    image: "../src/static/profiles/profphoto.jpg",
+    image: ProfileImage,
     skills: [
       "마케팅 콘텐츠 제작",
       "인스타그램 관리",
